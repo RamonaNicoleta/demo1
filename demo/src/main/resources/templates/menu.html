@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Coffee Shop - Menu</title>
+</head>
+<body>
+    <h1>Coffee Shop Menu</h1>
+    <!-- Add this section to display coffee options -->
+    <div th:each="coffee : ${coffees}">
+        <div class="coffee-item">
+            <img th:src="@{/images/${coffee.image}}" alt="" class="coffee-image">
+            <h3 th:text="${coffee.name}"></h3>
+            <p th:text="${coffee.description}"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

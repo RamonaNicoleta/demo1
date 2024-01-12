@@ -1,0 +1,31 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Adaugă aceste stiluri pentru a formata elementele adăugate */
+.coffee-item {
+    margin-bottom: 20px;
+}
+
+.coffee-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
